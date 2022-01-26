@@ -1,0 +1,38 @@
+
+@api = http://localhost:3000/clientes
+
+GET {{api}}
+
+###
+GET {{api}}/16
+
+###
+GET {{api}}/count
+###
+POST {{api}}
+content-Type: application/json
+
+{
+    "nombre": "Jhon",
+    "apellidos": "Avila",
+    "edad": "35",
+    "correo": "Jhon@hotmail.com",
+    "nacionalidad": "Cubano",
+    "ci": "652156"
+}
+
+###
+DELETE {{api}}/17
+
+###
+PUT  {{api}}/16
+content-Type: application/json
+
+{
+   // "nombre": "Juan",
+    //"apellidos": "Alvarez",
+    "edad": "26"
+  //  "correo": "Juan@hotmail.com",
+   // "nacionalidad": "Argentino",
+   // "ci": "854123"
+}
